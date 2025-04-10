@@ -5,6 +5,7 @@ import Register from "./pages/Register";
 import AdminDashboard from "./pages/AdminDashboard";
 import StudentDashboard from "./pages/StudentDashboard";
 import Layout from "./Layout";
+import About from "./pages/About";
 function App() {
   return (
     <Router>
@@ -13,6 +14,8 @@ function App() {
       <Route index element={<Welcome/>} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/about" element={<About />} />
+
         </Route>
         <Route path="/admin-dashboard" element={<AdminDashboard />} />
         <Route path="/student-dashboard" element={<StudentDashboard />} />

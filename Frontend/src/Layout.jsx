@@ -12,7 +12,7 @@ const Layout = () => {
           "linear-gradient(318deg, rgba(234,176,255,1) 0%, rgba(255,255,255,1) 38%, rgba(255,255,255,1) 52%, rgba(255,255,255,1) 67%, rgba(234,176,255,1) 98%)",
       }}
     >
-      <div className="w-full z-10">
+      <div className="w-full z-50">
         <Navbar />
       </div>
       <div className="w-full flex-grow z-10">
