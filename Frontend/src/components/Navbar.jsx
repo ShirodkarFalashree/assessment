@@ -18,7 +18,7 @@ const Navbar = () => {
         <ul className="hidden md:flex space-x-6 text-[#7806c0] font-medium">
           <li><Link to="/" className="hover:text-purple-500">Home</Link></li>
           <li><Link to="/about" className="hover:text-purple-500">About</Link></li>
-          <li><Link to="/contact" className="hover:text-purple-500">Contact</Link></li>
+          <li><Link to="/Register" className="hover:text-purple-500">Register</Link></li>
         </ul>
 
         {/* Mobile Menu Icon */}
@@ -29,7 +29,7 @@ const Navbar = () => {
 
       {/* Mobile Drawer */}
       <div
-        className={`fixed top-0 right-0 h-full w-3/4 max-w-xs bg-white/40 backdrop-blur-2xl shadow-lg z-50 transform transition-transform duration-300 ease-in-out ${
+        className={`fixed top-0 right-0 h-full w-3/4 max-w-xs bg-white/40 backdrop-blur-sm shadow-lg z-50 transform transition-transform duration-300 ease-in-out ${
           isOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
@@ -38,7 +38,7 @@ const Navbar = () => {
             <RxCross1 />
           </button>
         </div>
-        <ul className="flex flex-col space-y-6 px-6 text-[#7806c0] font-semibold">
+        <ul className="flex flex-col text-2xl space-y-6 px-6 text-[#7806c0] font-semibold">
           <li><Link to="/" onClick={toggleMenu} className="hover:text-purple-500">Home</Link></li>
           <li><Link to="/about" onClick={toggleMenu} className="hover:text-purple-500">About</Link></li>
           <li><Link to="/contact" onClick={toggleMenu} className="hover:text-purple-500">Contact</Link></li>
@@ -48,7 +48,7 @@ const Navbar = () => {
       {/* Backdrop */}
       {isOpen && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-40 z-40"
+          className="fixed inset-0 bg-opacity-40 z-40"
           onClick={toggleMenu}
         ></div>
       )}
